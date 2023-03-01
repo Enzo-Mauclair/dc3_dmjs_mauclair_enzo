@@ -1,10 +1,15 @@
-function inversercaracteres(chaine) {
+function inversercaracteres(cara) {
+
     var result = "";
-    for (var i = chaine.length - 1; i >= 0; i--) {
-        result += chaine[i];
-      }
-    
+    var i = cara.length - 1;
+
+    while (i >= 0) {
+      result += cara[i];
+      i--;
+    }
+
       return result;
     }
 
-console.log(inversercaracteres("inversecemot"));
+    console.log(inversercaracteres("inversecemot"));
+    
